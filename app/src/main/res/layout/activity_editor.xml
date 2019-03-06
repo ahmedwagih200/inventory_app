@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".EditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="@string/category_overview"
+            style="@style/CategoryStyle" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:hint="Name"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+
+            <EditText
+                android:id="@+id/edit_QUN"
+                android:hint="Quantity"
+                android:inputType="number"
+                style="@style/EditorFieldStyle" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp">
+
+            <EditText
+                android:id="@+id/edit_Price"
+                android:hint="Price"
+                android:inputType="number"
+                style="@style/EditorFieldStyle" />
+
+            <TextView
+                android:text="$ Dollar"
+                style="@style/EditorUnitsStyle"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_Supname"
+        android:hint="SupplierName"
+        android:inputType="textCapWords"
+        style="@style/EditorFieldStyle" />
+
+    <EditText
+        android:id="@+id/edit_Supnum"
+        android:layout_marginBottom="10dp"
+        android:hint="SupplierNumber"
+        android:inputType="textCapWords"
+        style="@style/EditorFieldStyle" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/increase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/decrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="order"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+    <TextView
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:text="Hint : To Delete The product press the menu touch Button"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
